@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style>
+            .div1{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap:30px;
+            }
+            .div2{
+                background-color: lightcyan;
+                text-align: center;
+                padding:30px;
+                border-radius: 30px;
+            }
+            .basic{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .months{
+                font-size: 40px;
+                font-weight: bold;
+            }
+            li{
+                list-style: none;
+                margin-bottom: 10px;
+            }
+            button{
+                background-color: rgb(248, 145, 231);
+                padding: 8px;
+                border:none;
+                border-radius: 10px;
+
+            }
+            @media(max-width:480px){
+                .div1{
+                flex-direction: column;
+            }}
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <div class="div2">
+                <div class="basic">Basic</div>
+                <div class="months">3 months</div>
+                    <ul>
+                        <li>✅10GB Storage</li>
+                        <li>✅3 Users</li>
+                        <li>🚫support</li>
+                    </ul>
+                <button>Sign Up</button>
+            </div>
+            <div class="div2">
+                <div class="basic">Basic</div>
+                        <div class="months">6 months</div>
+                    <ul>
+                        <li>✅50GB Storage</li>
+                        <li>✅7 Users</li>
+                        <li>🚫support</li>
+                    </ul>
+                    <button>Sign Up</button>
+                </div>
+                <div class="div2">
+                    <div class="basic">Basic</div>
+                        <div class="months">12 months</div>
+                    <ul>
+                        <li>✅100GB Storage</li>
+                        <li>✅12 Users</li>
+                        <li>🚫support</li>
+                    </ul>
+                    <button>Sign Up</button>
+            </div>
+        </div>
+    </body>
+</html>
